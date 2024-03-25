@@ -47,8 +47,8 @@ endpoints:
         models:
           gpt-4:
             deploymentName: "blended-learning-chatbot-gpt-4"
-            version: "1106-Preview"
-        # ... (model-level configuration)
+            # wird von LibreChat bei Verwendung der Assistants als API-Version statt Model-Version verwendet
+            version: "2024-02-15-preview"
   assistants:
     disableBuilder: false # Disable Assistants Builder Interface by setting to `true`
     pollIntervalMs: 750  # Polling interval for checking assistant updates
