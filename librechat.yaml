@@ -35,13 +35,13 @@ registration:
 endpoints:
   azureOpenAI:
     # Enable use of Assistants with Azure
-    assistants: true
+    assistants: false
     groups:
       - group: blended-learning-chatbot
         apiKey: "${AZURE_OPENAI_API_KEY}"
         instanceName: blended-learning-chatbot
         # Mark this group as assistants compatible
-        assistants: true
+        assistants: false
         models:
           gpt-4:
             deploymentName: "blended-learning-chatbot-gpt-4"
@@ -55,13 +55,13 @@ endpoints:
     pollIntervalMs: 750  # Polling interval for checking assistant updates
     timeoutMs: 180000  # Timeout for assistant operations
   #   # Should only be one or the other, either `supportedIds` or `excludedIds`
-    supportedIds: ["asst_Tw2QYlFISy0HwOdR3q7mhKBS"]
+    #supportedIds: ["asst_Tw2QYlFISy0HwOdR3q7mhKBS"]
   #   # excludedIds: ["asst_excludedAssistantId"]
   #   # (optional) Models that support retrieval, will default to latest known OpenAI models that support the feature
   #   retrievalModels: ["gpt-4-turbo-preview"]
   #   # (optional) Assistant Capabilities available to all users. Omit the ones you wish to exclude. Defaults to list below.
   #   capabilities: ["code_interpreter", "retrieval", "actions", "tools", "image_vision"]
-    capabilities: ["code_interpreter", "actions", "tools"]
+    capabilities: ["retrieval"]
   # custom:
   #   # Groq Example
   #   - name: 'groq'
