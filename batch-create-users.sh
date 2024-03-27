@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Pfad zur TXT-Datei mit den E-Mail-Adressen
 EMAIL_FILE="emails.txt"
