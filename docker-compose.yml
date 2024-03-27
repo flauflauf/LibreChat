@@ -27,6 +27,7 @@ services:
       - ./logs:/app/api/logs
       - ./user-management:/app/user-management
       - ./batch-create-users.sh:/app/batch-create-users.sh
+      - ./batch-delete-users.sh:/app/batch-delete-users.sh
   mongodb:
     container_name: chat-mongodb
     image: mongo
