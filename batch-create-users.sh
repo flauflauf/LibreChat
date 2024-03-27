@@ -1,10 +1,10 @@
 #!/bin/sh
 
 # Pfad zur TXT-Datei mit den E-Mail-Adressen
-EMAIL_FILE="emails.txt"
+EMAIL_FILE="user-management/emails.txt"
 
 # Ausgabe-CSV-Datei
-OUTPUT_CSV="users.csv"
+OUTPUT_CSV="user-management/users.csv"
 
 # Header für die CSV-Datei
 echo "email;username;password" > "$OUTPUT_CSV"

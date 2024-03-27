@@ -1,5 +1,0 @@
-blub1@example.com
-blub2@example.com
-blub3@example.com
-blub4@example.com
-blub5@example.com
